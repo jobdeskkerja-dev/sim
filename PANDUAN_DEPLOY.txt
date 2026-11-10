@@ -1,0 +1,17 @@
+PANDUAN DEPLOY SIPRES KE HUGGING FACE SPACES
+
+1. Buka https://huggingface.co/spaces
+2. Login / buat akun Hugging Face.
+3. Klik Create new Space.
+4. Isi nama Space, misalnya: sipres-smkn4oku.
+5. Pilih SDK: Gradio.
+6. Pilih visibility sesuai kebutuhan (Public berarti siapa pun dapat membuka aplikasi).
+7. Buat Space.
+8. Pada tab Files, upload tiga file dari paket ini: app.py, requirements.txt, README.md.
+9. Tunggu proses build selesai, lalu buka aplikasi dari tab App.
+
+CATATAN:
+- Aplikasi ini menerima file Excel untuk diproses pada sesi penggunaan. Notebook asal tidak menunjukkan penyimpanan permanen ke database.
+- Untuk menampilkan logo sekolah, unggah file logo PNG/JPG ke root Space. Nama file sebaiknya mengandung kata 'logo'.
+- File Excel berisi data siswa adalah data pribadi. Jangan gunakan Space Public untuk data nyata yang tidak boleh diakses umum. Pilih Private atau siapkan autentikasi sebelum digunakan.
+- Notebook asal berisi token Ngrok. Token tersebut tidak diperlukan untuk deployment ini. Demi keamanan, cabut/revoke token Ngrok lama dan buat token baru jika masih digunakan di tempat lain.
